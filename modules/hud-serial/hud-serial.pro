@@ -41,7 +41,7 @@ cars.files += cars/Sample/*
 INSTALLS += cars
 
 ##recursively copy the theme folder
-car_files_copy.commands = $(COPY_DIR) $${PWD}/cars $$OUT_PWD
+car_files_copy.commands = $(COPY_DIR) $${PWD}/cars $$OUT_PWD/cars2
 ##attach the copy command to make target
 first.depends = $(first) car_files_copy
 ##export variables to global scope
